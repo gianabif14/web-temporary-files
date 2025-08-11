@@ -154,11 +154,10 @@ Skrip `cleanup.php` harus dijalankan secara berkala untuk menghapus file yang ke
 1. Buka editor crontab:
    ```bash
    crontab -e
-   * * * * * /usr/bin/php /var/www/html/web-temporary-files/cleanup.php >> /dev/null 2>&1
    ```
 2. Tambahkan baris berikut di paling bawah untuk menjalankannya setiap menit:
    ```
-   * * * * * /usr/bin/php /var/www/html/web-temporary-files/cleanup.php >> /dev/null 2>&1
+   * * * * * /usr/bin/php /web-temporary-files/cleanup.php >> /dev/null 2>&1 # Sesuaikan dengan path Anda
    ```
 Tentu, ini adalah bagian akhir dari file README.md yang bisa langsung Anda salin-tempel.
 
@@ -173,17 +172,17 @@ Skrip `cleanup.php` harus dijalankan secara berkala untuk menghapus file yang ke
    ```
 2. Tambahkan baris berikut di paling bawah untuk menjalankannya setiap menit:
    ```bash
-   * * * * * /usr/bin/php /var/www/html/web-temporary-files/cleanup.php >> /dev/null 2>&1
+   * * * * * /usr/bin/php /web-temporary-files/cleanup.php >> /dev/null 2>&1 # Sesuaikan dengan path Anda
    ```
-   Penting: Pastikan path di atas adalah path absolut ke file cleanup.php di server Anda.
+   ## Penting: Pastikan path di atas adalah path absolut ke file cleanup.php di server Anda.
    
 ### 7. Atur Izin Folder
 Pastikan server web (biasanya user www-data) memiliki izin untuk menulis ke folder uploads.
 ```bash
-sudo chown -R www-data:www-data /var/www/html/web-temporary-files
-sudo chmod -R 755 /var/www/html/web-temporary-files
-Setelah semua langkah ini, aplikasi Anda seharusnya sudah berjalan dengan baik.
+sudo chown -R www-data:www-data /web-temporary-files # Sesuaikan dengan path Anda
+sudo chmod -R 755 /web-temporary-files # Sesuaikan dengan path Anda
 ```
+### Setelah semua langkah ini, aplikasi Anda seharusnya sudah berjalan dengan baik.
 ### 📜 Lisensi
 Proyek ini dilisensikan di bawah GNU General Public License v3.0. Lihat file `LICENSE` untuk detail lengkap.
 
