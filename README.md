@@ -6,6 +6,11 @@ Aplikasi web sederhana berbasis PHP untuk mengunggah file sementara. Setiap file
 
 ---
 
+## 🌐 Demo Website
+Gunakan dengan bijak, mohon untuk tidak spam atau DDoS. Link: 
+[Web Demo](https://temporaryfile.wuaze.com/)
+
+---
 ## 📸 Tampilan Aplikasi
 
 <table>
