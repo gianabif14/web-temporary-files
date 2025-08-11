@@ -14,14 +14,20 @@ Aplikasi web sederhana berbasis PHP untuk mengunggah file sementara. Setiap file
     <td align="center"><strong>Halaman Registrasi</strong></td>
   </tr>
   <tr>
-    <td>![Tampilan login pengguna](./media/login.png)</td>
-    <td>![Tampilan registrasi pengguna](./media/regis.png)</td>
+    <td align="center">
+      <img src="./media/login.png" alt="Tampilan login pengguna" width="400">
+    </td>
+    <td align="center">
+      <img src="./media/regis.png" alt="Tampilan registrasi pengguna" width="400">
+    </td>
   </tr>
   <tr>
     <td colspan="2" align="center"><strong>Dasbor Utama Pengguna</strong></td>
   </tr>
-    <tr>
-    <td colspan="2">![Tampilan dashboard pengguna](./media/dash.png)</td>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="./media/dash.png" alt="Tampilan dashboard pengguna" width="810">
+    </td>
   </tr>
 </table>
 
