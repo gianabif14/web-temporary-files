@@ -164,9 +164,6 @@ Skrip `cleanup.php` harus dijalankan secara berkala untuk menghapus file yang ke
    ```
    * * * * * /usr/bin/php /web-temporary-files/cleanup.php >> /dev/null 2>&1 # Sesuaikan dengan path Anda
    ```
-Tentu, ini adalah bagian akhir dari file README.md yang bisa langsung Anda salin-tempel.
-
-Markdown
 
 ### 6. Atur Cron Job
 Skrip `cleanup.php` harus dijalankan secara berkala untuk menghapus file yang kedaluwarsa.
@@ -179,7 +176,7 @@ Skrip `cleanup.php` harus dijalankan secara berkala untuk menghapus file yang ke
    ```bash
    * * * * * /usr/bin/php /web-temporary-files/cleanup.php >> /dev/null 2>&1 # Sesuaikan dengan path Anda
    ```
-   ## Penting: Pastikan path di atas adalah path absolut ke file cleanup.php di server Anda.
+Penting: Pastikan path di atas adalah path yang sesuai ke file `cleanup.php` di server Anda.
    
 ### 7. Atur Izin Folder
 Pastikan server web (biasanya user www-data) memiliki izin untuk menulis ke folder uploads.
@@ -187,9 +184,14 @@ Pastikan server web (biasanya user www-data) memiliki izin untuk menulis ke fold
 sudo chown -R www-data:www-data /web-temporary-files # Sesuaikan dengan path Anda
 sudo chmod -R 755 /web-temporary-files # Sesuaikan dengan path Anda
 ```
-### Setelah semua langkah ini, aplikasi Anda seharusnya sudah berjalan dengan baik.
+Setelah semua langkah ini, aplikasi Anda seharusnya sudah berjalan dengan baik.
+
+---
+
 ### 📜 Lisensi
 Proyek ini dilisensikan di bawah GNU General Public License v3.0. Lihat file `LICENSE` untuk detail lengkap.
+
+----
 
 ### ❤️ Ucapan Terima Kasih
 Dibuat oleh @gianabif14.
